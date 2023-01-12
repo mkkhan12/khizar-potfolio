@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+nav{
+    display: flex; 
+    justify-content: space-around;
+    height: 30vh;
+    width: 100%;
+    margin-top: -100px;
+}
+li{
+    display: inline-block; 
+    padding: 0 30px;
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    flex-wrap: wrap;
+ 
+}
+a{
+    position: relative;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Poppins, sans-serif;
+    color: rgba(211, 211, 211, 0.74);
+    padding: 0px 5px;
+    top: 25px;
+    
+    
+}
+a::after{
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 0;
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+    border-radius: 50rem;
+    transition: 500ms;
+    animation-fill-mode: initial;
+    animation: up 1s  ease-in infinite;
+}
+a:hover{
+    color: white;
+}
+a:hover::after{
+    width: 100%;
+}
+
+@media only screen and (min-width: 951px) {
+    h1{
+        position: relative;
+        color: whitesmoke;
+        font-size: 50px;
+        margin: 10px 20px ;
+        font-family: cursive;
+        margin-left: 70px;
+    }
+    samp{
+        font-family: 'Monoton', cursive;
+        font-weight: 100;
+        animation: change 1s linear infinite forwards;
+    }
+    @keyframes change {
+        0%{
+            color: red;
+        }
+        50%{
+            color: blue;
+            padding: 5px;
+        }
+        100%{
+            color: red;
+        }
+        
+        
+    }
+
+}
+
+
+
+@media only screen and (max-width: 950px) {
+    body {
+      background-color: rgba(9, 95, 255, 0.815);
+    }
+    a{
+        font-size: 30px;
+        margin: -25px;
+    }
+    nav{
+        display: flex; 
+        justify-content: space-around;
+        height: 20vh;
+        width: 100%;
+        margin-top: 0px;
+    }
+    ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .logo{
+        display: none;
+    }
+    ul{
+        display: flex;
+        justify-content:center;
+        width: 100%;
+    }
+}
+  @media only screen and (max-width: 600px) {
+    a{
+        font-size: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    a{
+        font-size: 17px;
+    }
+  }
+
+
+  /*---------end of header ---------*/
+
+h2{
+    font-size: 40px;
+    color: #fcfc;
+    font-family: monospace;
+    margin-left: 70px;
+}
+
+h3{
+    font-size: 85px;
+    color: cornsilk;
+    font-family: poppins;
+    margin-left: 70px;
+}
+
+.content p{
+    font-size: 25px;
+    color: aliceblue;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 70px;
+}
+.email{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+#email{
+    position: relative;
+    padding: 9px;
+    border-radius: 10rem;
+    border: none;
+    width: 25%;
+    border: 2px solid #f9004d;
+    color: rgba(0, 0, 0, 0.699);
+    font-family: poppins;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+}
+#submit{
+    position: relative;
+    padding: 6px;
+    width: 80px;
+    border-radius: 10rem;
+    border: none;
+    left: -95px;
+    background-color: #f9004d;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    
+}
+
+
+.background-image{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    margin-top: -10px;
+    filter: grayscale(10%);
+    z-index: -10;
+}
+#khan{
+    color: #f9004d;
+}
