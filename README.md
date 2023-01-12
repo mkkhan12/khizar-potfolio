@@ -1,2 +1,0 @@
-# khizar potfolio
- random potfolio
