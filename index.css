@@ -65,6 +65,9 @@ a:hover::after{
         margin: 10px 20px ;
         font-family: cursive;
         margin-left: 70px;
+        -webkit-user-select: none; 
+        -ms-user-select: none;
+        user-select: none;
     }
     samp{
         font-family: 'Monoton', cursive;
