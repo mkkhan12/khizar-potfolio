@@ -1,19 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
 
-html {
-  background-color: #ffffff;
-}
-
-body {
-  font-family: "Roboto Mono", monospace;
-  color: #0a0a23;
-  font-size: 18px;
-  padding: 1em;
-  line-height: 1.4;
-  text-align: center;
-  margin-top: 5vw;
-}
-
 html,
 body {
   height: 90%;
@@ -26,21 +12,65 @@ body {
 h1,
 p {
   text-align: left;
+  animation: text 1s 1;
+}
+@keyframes text {
+  0%{
+    font-size: px;
+  }
+  50%{
+    transform: rotateX(180deg);
+    color: black;
+  }
+  100%{
+    transform: rotate(0deg);
+  }
 }
 
 .flex-container {
   height: 100%;
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -50px;
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  height: 100vh;
 }
 
 footer {
   font-size: 0.75em;
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+
+
+/* ----------------------------*/
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #d4c922d8, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
