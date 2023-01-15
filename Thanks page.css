@@ -7,7 +7,9 @@
 
 
 
-html,
+html{
+  scroll-behavior: smooth;
+}
 body {
   height:100vh;
 }
@@ -16,14 +18,18 @@ body {
   margin: 0;
 }
 
-h1,
+h5{
+  font-size: 35px;
+  line-height: 2.5;
+  animation: text 500ms 1;
+}
 p {
   text-align: left;
-  animation: text 1s 1;
+  animation: text 500ms 1;
 }
 @keyframes text {
   0%{
-    font-size: px;
+    font-size: 0px;
   }
   50%{
     transform: rotateZ(10deg);
