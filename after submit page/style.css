@@ -1,8 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+
+
 
 html,
 body {
-  height: 90%;
+  height:100vh;
 }
 
 body {
@@ -19,8 +26,8 @@ p {
     font-size: px;
   }
   50%{
-    transform: rotateX(180deg);
-    color: black;
+    transform: rotateZ(10deg);
+    color: #7a6d71;
   }
   100%{
     transform: rotate(0deg);
@@ -28,13 +35,14 @@ p {
 }
 
 .flex-container {
+  position: relative;
   height: 100%;
   padding: 0;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -50px;
+  margin-top: -70px;
   font-family: "Roboto Mono", monospace;
   color: white;
   font-size: 18px;
@@ -44,33 +52,119 @@ p {
 }
 
 footer {
+  position: relative;
   font-size: 0.75em;
   font-family: "Roboto Mono", monospace;
   color: white;
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 0.1;
   text-align: center;
 }
 
 
 
-/* ----------------------------*/
+/* ------------backgound----------------*/
 
-body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #d4c922d8, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
-	height: 100vh;
+* {
+  padding: 0;
+  margin: 0;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: block;
+  background-color: #0e4166;
+  background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+
+/*----------- header ------------ */
+
+nav{
+  display: flex; 
+  justify-content: space-around;
+  margin-top: -100px;
+}
+li{
+  display: inline-block; 
+  padding: 0 30px;
+}
+ul{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+a{
+  position: relative;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Poppins, sans-serif;
+  color: rgba(211, 211, 211, 0.74);
+  padding: 0px 5px;
+  top: 25px;
+  
+  
+}
+a::after{
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 0;
+  background-color: rgb(255, 255, 255);
+  height: 3px;
+  border-radius: 50rem;
+  transition: 500ms;
+  animation-fill-mode: initial;
+  animation: up 1s  ease-in infinite;
+}
+a:hover{
+  color: white;
+}
+a:hover::after{
+  width: 100%;
+}
+
+@media only screen and (min-width: 951px) {
+  h1{
+      position: relative;
+      color: whitesmoke;
+      font-size: 50px;
+      margin: 10px 20px ;
+      font-family: cursive;
+      margin-left: 70px;
+      -webkit-user-select: none; 
+      -ms-user-select: none;
+      user-select: none;
+  }
+  samp{
+      font-family: 'Monoton', cursive;
+      font-weight: 100;
+      animation: change 1s linear infinite forwards;
+  }
+  @keyframes change {
+      0%{
+          color: red;
+      }
+      50%{
+          color: blue;
+          padding: 5px;
+      }
+      100%{
+          color: red;
+      }
+      
+      
+  }
+
+}
+
+.header{
+  z-index: 1000;
+  position: relative;
 }
