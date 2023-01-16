@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khizar Potfolio</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="">
     <link rel="stylesheet" href="index.css">
     
 </head>
@@ -31,11 +31,12 @@
         <br>
         <br>
             <div class="email">
-                <form action="Thanks page.html">
-                    <label for="email"> </label>
+                <form name="submit-to-google-sheet">
+                    <label for="email" > </label>
                     <input type="email" id="email" name="email" required placeholder="Enter your Email">
                     <input type="submit" value="Submit" id="submit">
                   </form>
+                  <span id="msg" class="sub" > </span>
            </div>
         </div>
         
@@ -51,5 +52,24 @@
             </div>
         </div>
     
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxSuXtt_KKMbcHT_NqtVIgqgM2RNWFaF5w5vbt5vL1qFVaBRsbC0xuab_WSSYhWsqM6wA/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = ":) Thanks You For Subscribing! ..."
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
 </body>
 </html>

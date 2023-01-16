@@ -154,6 +154,10 @@ h3{
     font-family: poppins;
     margin-left: 70px;
 }
+h3 span{
+    font-size: 85px;
+    font-family: poppins;
+}
 
 .content p{
     font-size: 25px;
@@ -191,6 +195,17 @@ h3{
     color: white;
     box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
     
+}
+.sub{
+    position: absolute;
+    color: #f0e009;
+    font-size: 15px;
+    margin-top: 7px;
+    margin-left: 10px;
+    font-family: open Sans;
+    font-weight: 200;
+    word-spacing: 2px;
+
 }
 
 
