@@ -338,6 +338,7 @@ h6{
     text-align: center;
     border-radius: 1.5rem;
     border: solid 2px black;
+    transition: 500ms;
 }
 
 .boxes-2{
@@ -348,6 +349,7 @@ h6{
     text-align: center;
     border-radius: 1.5rem;
     border: solid 2px black;
+    transition: 500ms;
 }
 .boxes-3{
     background-color:  #141414;
@@ -357,25 +359,55 @@ h6{
     margin-left: 0px;
     border-radius: 1.5rem;
     border: solid 2px black;
+    transition: 500ms;
 }
 
-.boxes-1 span{
+.boxes-1 span, .boxes-2 span, .boxes-3 span {
     font-size: 50px;
-    padding: 15px 0 0 0;
+    padding-top: 15px;
     color: #f9004d;
     user-select: none;
 }
 
-.boxes-2 span{
-    color: #f9004d;
-    font-size: 50px;
-    padding: 15px 0 0 0;
-    user-select: none;
+
+.boxes .boxes-1 h6, .boxes .boxes-2 h6, .boxes .boxes-3 h6{
+    font-size: 30px;
+    user-select:text;
+    margin-top: -60px;
 }
 
-.boxes-3 span{
-    color: #f9004d;
-    font-size: 50px;
-    padding: 15px 0 0 0;
-    user-select: none;
+
+.boxes .boxes-1 p, .boxes .boxes-2 p, .boxes .boxes-3 p{
+    font-size: 16px;
+    margin-top: -78px;
+    line-height: 22px;
+    text-align: center;
+    padding: 28px;
+    font-family: poppins;
+    color: #7d8a97;
+}
+
+.boxes .boxes-1 button, .boxes .boxes-2 button, .boxes .boxes-3 button{
+    padding: 8px;
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: 500;
+    border-radius: .5rem;
+    background-color: transparent;
+    border: solid 1px white;
+    color: white;
+    cursor: pointer;
+    transition: 500ms;
+}
+.boxes .boxes-1 button:hover, .boxes .boxes-2 button:hover, .boxes .boxes-3 button:hover{
+    background-color:#f9004d;
+    border: solid 1px #f9004d;
+    border-radius: .1rem;
+}
+
+.boxes-1:hover, .boxes-2:hover, .boxes-3:hover{
+    transform: scale(1.05);
+    background-color: transparent;
+    color: white;
+    border: solid 1px gray;
 }
