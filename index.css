@@ -37,7 +37,7 @@ ul{
     flex-wrap: wrap;
  
 }
-a{
+ul li a{
     position: relative;
     text-decoration: none;
     font-size: 25px;
@@ -48,7 +48,7 @@ a{
     
     
 }
-a::after{
+ul li a::after{
     content: "";
     display: flex;
     position: absolute;
@@ -60,10 +60,10 @@ a::after{
     animation-fill-mode: initial;
     animation: up 1s  ease-in infinite;
 }
-a:hover{
+ul li a:hover{
     color: white;
 }
-a:hover::after{
+ul li a:hover::after{
     width: 100%;
 }
 
@@ -410,4 +410,110 @@ h6{
     background-color: transparent;
     color: white;
     border: solid 1px gray;
+}
+
+
+/*  ----------stAt of contact section----------- */
+
+#contacts{
+    height: 100vh;
+    width: 100%;
+    background-color: #1c2025;
+}
+.info{
+    text-align: center;
+    top: 80px;
+    height: 35%;
+    line-height: 50px;
+}
+.info-2{
+    padding-top: 80px;
+    color: white;
+}
+h7{
+    font-size: 55px;
+    font-family: poppins;
+    font-weight: 700;
+}
+.info p{
+    font-size: 30px;
+    font-style: italic;
+}
+
+.contact-option{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    
+}
+
+
+
+.ne-btn{
+    text-shadow: 2px 2px 1px #1f1f1f;
+    padding: 30px;
+    
+}
+
+.contact-option a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: Poppins, sans-serif;
+    color: rgba(211, 211, 211, 0.74);
+    top: 25px;
+    
+
+}
+
+.contact-option a::after{
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 0;
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+    border-radius: 50rem;
+    transition: 500ms;
+    animation-fill-mode: initial;
+    animation: up 1s  ease-in infinite;
+}
+.contact-option a:hover{
+    color: white;
+}
+.contact-option a:hover::after{
+    width: 100%;
+}
+
+.hr-line{
+    margin-top: 200px;
+    height: 5px;
+    background-color: #f9004d;
+    border: none;
+}
+
+.footer {
+    display: flex;
+
+}
+
+.footer-text{
+    margin-top: 20px;
+    padding-left: 50px;
+}
+h8{
+    font-size: 20px;
+    font-family: poppins;
+    color: white;
+}
+
+.copyright{
+    padding: 15px;
+    font-family: poppins;
+    color: white;
+    margin-left: 180px;
+    font-size: 20px;
 }
