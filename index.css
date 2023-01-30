@@ -215,6 +215,7 @@ h3 span{
 
 
 .background-image{
+    
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -222,6 +223,7 @@ h3 span{
     background-size: cover;
     background-repeat:no-repeat;
     margin-top: -10px;
+    display: block;
     filter: grayscale(10%);
     z-index: -10;
 }
@@ -248,11 +250,12 @@ h3 span{
     min-width: 20px;
     height: auto;
     padding: 0px;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
+    filter: grayscale(40%);
     margin-left: 90px ;
-    box-shadow: 1px -1px 38px 0px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 1px -1px 38px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 1px -1px 38px 0px rgba(0,0,0,0.5);
+    box-shadow: 1px -1px 38px 0px rgba(32, 32, 32, 0.5);
+    -webkit-box-shadow: 1px -1px 38px 0px rgba(32, 32, 32, 0.5);
+    -moz-box-shadow: 1px -1px 38px 0px rgba(34, 33, 33, 0.5);
     transition: 500ms;
 }
 .info-image img:hover{
@@ -385,7 +388,7 @@ h6{
     padding: 28px;
     font-family: poppins;
     color: #7d8a97;
-}
+} 
 
 .boxes .boxes-1 button, .boxes .boxes-2 button, .boxes .boxes-3 button{
     padding: 8px;
