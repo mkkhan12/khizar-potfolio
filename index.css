@@ -219,12 +219,11 @@ h3 span{
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-image: url(images/background\ video.gif);
+    background-image: url(images/background.jpg);
     background-size: cover;
     background-repeat:no-repeat;
     margin-top: -10px;
     display: block;
-    filter: grayscale(20%);
     z-index: -10;
 }
 #khan{
