@@ -389,17 +389,19 @@ h6{
     color: #7d8a97;
 } 
 
-.boxes .boxes-1 button, .boxes .boxes-2 button, .boxes .boxes-3 button{
-    padding: 8px;
-    font-size: 15px;
-    font-family: poppins;
-    font-weight: 500;
-    border-radius: .5rem;
-    background-color: transparent;
-    border: solid 1px white;
-    color: white;
-    cursor: pointer;
-    transition: 500ms;
+.boxes .boxes-1 button, 
+.boxes .boxes-2 button, 
+.boxes .boxes-3 button{
+                    padding: 8px;
+                    font-size: 15px;
+                    font-family: poppins;
+                    font-weight: 500;
+                    border-radius: .5rem;
+                    background-color: transparent;
+                    border: solid 1px white;
+                    color: white;
+                    cursor: pointer;
+                    transition: 500ms;
 }
 .boxes .boxes-1 button:hover, .boxes .boxes-2 button:hover, .boxes .boxes-3 button:hover{
     background-color:#f9004d;
@@ -489,13 +491,40 @@ h7{
 .contact-option a:hover::after{
     width: 100%;
 }
+.hire-btn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding: 55px;
+    width: 100%;
+    background-color: transparent;
+}
 
+.hire-me button{
+    padding: 12px 45px;
+    font-size: 32px;
+    font-family: Josefin Sans;
+    font-weight: 500;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 500ms;
+    background-color:#f9004d;
+    border: solid 1px #f9004d;
+    border-radius: .1rem;
+}
+.hire-me:hover{
+    background-color: transparent;
+
+}
+/* continue for here -- hover need to be done*/
 .hr-line{
     margin-top: 200px;
     height: 5px;
     background-color: #f9004d;
     border: none;
 }
+
 
 .footer {
     display: flex;
