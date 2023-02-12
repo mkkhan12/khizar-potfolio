@@ -550,3 +550,26 @@ h8{
     margin-left: 180px;
     font-size: 20px;
 }
+
+
+
+/*----------up arrow------*/
+
+.up-arrow {
+  position: absolute;
+  
+  font-size: 30px;
+  margin-left: 95%;
+  margin-top: 11%;
+  transition: 0.5s;
+}
+.up-arrow a{
+    color: rgb(255, 255, 255);
+}
+.up-arrow a:active {
+    color: red;
+ }
+
+ .up-arrow:hover{
+    transform: translateY(8px);
+ }
