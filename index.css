@@ -501,21 +501,23 @@ h7{
 }
 
 .hire-me button{
-    padding: 12px 45px;
+    padding: 11px 45px;
     font-size: 32px;
     font-family: Josefin Sans;
     font-weight: 500;
     background-color: transparent;
-    color: white;
+    color: #ffffffd5;
     cursor: pointer;
+    background-color: transparent;
+    border: solid 2px #ffffff9d;
     transition: 500ms;
-    background-color:#f9004d;
-    border: solid 1px #f9004d;
     border-radius: .1rem;
 }
-.hire-me:hover{
-    background-color: transparent;
-
+.hire-me button:hover{
+    background-color:#f9004d;
+    border: solid 2px #f9004d;
+    color: white;
+    transform: translateY(10px);
 }
 /* continue for here -- hover need to be done*/
 .hr-line{
